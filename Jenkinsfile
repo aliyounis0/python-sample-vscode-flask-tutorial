@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "agent_0"
+        label "java"
     }
     environment{
         XYZ='ITI ITI ITI'
