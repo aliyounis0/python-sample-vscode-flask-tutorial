@@ -27,7 +27,7 @@ node('java') {
     }
     
     stage("Push Docker Image") {
-        sh "docker tag itiv4/data-iti:v${BUILD_NUMBER} aliyounis22/data-iti-scripted-way:v${BUILD_NUMBER}"
-        sh "docker push aliyounis22/data-iti-scripted-way:v${BUILD_NUMBER}"
+        sh "docker tag itiv4/data-iti:v${BUILD_NUMBER} aliyounis22/data-iti-way2:v${BUILD_NUMBER}"
+        sh "docker push aliyounis22/data-iti-way2:v${BUILD_NUMBER}"
         }
 }
