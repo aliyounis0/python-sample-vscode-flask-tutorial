@@ -20,8 +20,8 @@ pipeline{
         }
         stage("Push Docker image"){
             steps{
-                sh "docker tag itiv4/data-iti:v${BUILD_NUMBER} aliyounis22/data-iti:v${BUILD_NUMBER}"
-                sh "docker push aliyounis22/data-iti:v${BUILD_NUMBER}"
+                //sh "docker tag itiv4/data-iti:v${BUILD_NUMBER} aliyounis22/data-iti:v${BUILD_NUMBER}"
+                //sh "docker push aliyounis22/data-iti:v${BUILD_NUMBER}"
                 script{
                     def dockerx = new org.iti.docker()
                     dockerx.login("${DOCKER_USER}", "${DOCKER_PASS}")
