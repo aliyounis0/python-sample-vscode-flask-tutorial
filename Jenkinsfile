@@ -27,7 +27,7 @@ pipeline{
                 script{
                     def dockerx = new org.iti.docker()
                     dockerx.login("${DOCKER_USER}", "${DOCKER_PASS}")
-                    dockerx.push("${DOCKER_USER}", "${DOCKER_PASS}")
+                    dockerx.push("${DOCKER_USER}","itiv4/data-iti", "${DOCKER_PASS}")
                 }
             }
         }
